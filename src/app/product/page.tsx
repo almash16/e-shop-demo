@@ -1,6 +1,8 @@
 import { ProductInfo } from "core/components/product-info/product-info";
 import { FakeAPIProduct } from "core/types/product";
 
+export const runtime = 'edge';
+
 interface PageProps {
   searchParams: Promise<{ id: string }>;
 }
