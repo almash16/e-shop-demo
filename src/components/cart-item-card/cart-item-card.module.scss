@@ -1,0 +1,70 @@
+@import "./../../styles/variables.scss";
+.container {
+  display: flex;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: $bg-secondary;
+  gap: 2rem;
+  flex-direction: row;
+  @media (max-width: $sm-mobile) {
+    flex-direction: column;
+  }
+
+  .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > img {
+      width: 8vw;
+      height: auto;
+      @media (max-width: $sm-mobile) {
+        width: 200px;
+      }
+    }
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: $font-size-3;
+
+    @media (max-width: $sm-mobile) {
+      gap: 1rem;
+      max-height: fit-content;
+    }
+
+    max-height: 150px;
+    .title,
+    .price {
+      font-size: $font-size-2;
+      @media (max-width: $sm-mobile) {
+        font-size: $font-size-3;
+      }
+      font-weight: 600;
+    }
+    .button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      text-decoration: underline;
+      color: rgb(193, 49, 49);
+      width: fit-content;
+    }
+
+    .quantity {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      align-items: center;
+      > button {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border: none;
+        background-color: $bg-primary;
+        border-radius: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Summary >1 items displays the correct subtotal 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+    data-testid="summary"
+  >
+    <span>
+      Subtotal (2  products):  
+    </span>
+    <span>
+      $100 
+    </span>
+  </div>
+</DocumentFragment>
+`;

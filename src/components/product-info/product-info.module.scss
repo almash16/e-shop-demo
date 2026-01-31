@@ -1,0 +1,91 @@
+@import "../../styles/variables.scss";
+
+.container {
+  margin: 2rem 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  @media (max-width: $sm-mobile) {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  padding: 2rem;
+  background-color: $bg-secondary;
+  border-radius: 8px;
+  gap: 1rem;
+  :first-child {
+    align-self: center;
+  }
+
+  .image {
+    width: auto;
+    max-height: 33vh;
+    @media (max-width: $sm-mobile) {
+      height: 150px;
+      width: auto;
+    }
+    height: 100%;
+  }
+  .info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    gap: 2rem;
+    @media (max-width: $sm-mobile) {
+      width: 100%;
+    }
+
+    .title {
+      font-size: $font-size-1;
+      @media (max-width: $sm-mobile) {
+        font-size: $font-size-2;
+      }
+      font-weight: 700;
+    }
+
+    .description {
+      align-self: flex-start;
+    }
+    .content {
+      padding: 1rem;
+      background-color: $bg-primary;
+      border-radius: 8px;
+      font-size: $font-size-3;
+    }
+    .action {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      gap: 1rem;
+      justify-content: space-between;
+      .price {
+        font-size: $font-size-2;
+        font-weight: 600;
+      }
+
+      .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        align-items: center;
+        > svg {
+          width: 24px;
+        }
+
+        gap: 1rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 10px 30px;
+        border: none;
+        background-color: black;
+        color: $bg-secondary;
+      }
+    }
+  }
+}

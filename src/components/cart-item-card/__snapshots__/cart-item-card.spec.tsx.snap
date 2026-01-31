@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItemCard Component should render a cart item card with correct product and quantity 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+    data-testid="cart-item-card"
+  >
+    <div
+      class="image"
+    >
+      <img
+        alt=""
+        data-nimg="1"
+        decoding="async"
+        height="0"
+        loading="lazy"
+        sizes="100vw"
+        src="/_next/image?url=%2Fsample-image.jpg&w=3840&q=75"
+        srcset="/_next/image?url=%2Fsample-image.jpg&w=640&q=75 640w, /_next/image?url=%2Fsample-image.jpg&w=750&q=75 750w, /_next/image?url=%2Fsample-image.jpg&w=828&q=75 828w, /_next/image?url=%2Fsample-image.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fsample-image.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fsample-image.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fsample-image.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fsample-image.jpg&w=3840&q=75 3840w"
+        style="color: transparent;"
+        width="0"
+      />
+    </div>
+    <div
+      class="info"
+    >
+      <span
+        class="title"
+      >
+        Sample Product
+      </span>
+      <span
+        class="price"
+      >
+        $10
+      </span>
+      <button
+        class="button"
+      >
+        Remove
+      </button>
+      <div
+        class="quantity"
+      >
+        <span>
+          Quantity:
+        </span>
+        <button>
+          -
+        </button>
+        <span>
+          2
+        </span>
+        <button>
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

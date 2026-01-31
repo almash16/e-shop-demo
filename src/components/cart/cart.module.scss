@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.container {
+  display: flex;
+  cursor: pointer;
+
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  text-decoration: none;
+
+  .notification {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 1rem;
+    top: 1rem;
+    @media (max-width: $sm-mobile) {
+      right: 16.5rem;
+    }
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    align-self: center;
+    color: $bg-primary;
+    background-color: rgb(218, 49, 49);
+    font-size: $font-size-3;
+  }
+}
